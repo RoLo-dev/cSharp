@@ -1,0 +1,11 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/bin/Debug/netcoreapp2.2/Second.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/bin/Debug/netcoreapp2.2/Second.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/bin/Debug/netcoreapp2.2/Second.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/bin/Debug/netcoreapp2.2/Second.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/bin/Debug/netcoreapp2.2/Second.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/obj/Debug/netcoreapp2.2/Second.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/obj/Debug/netcoreapp2.2/Second.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/obj/Debug/netcoreapp2.2/Second.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/obj/Debug/netcoreapp2.2/Second.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/obj/Debug/netcoreapp2.2/Second.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Second/obj/Debug/netcoreapp2.2/Second.pdb

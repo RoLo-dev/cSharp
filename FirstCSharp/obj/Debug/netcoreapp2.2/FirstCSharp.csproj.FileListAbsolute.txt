@@ -1,0 +1,11 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.pdb
