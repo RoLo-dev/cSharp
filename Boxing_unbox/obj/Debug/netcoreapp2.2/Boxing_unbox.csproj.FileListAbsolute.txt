@@ -1,0 +1,11 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/bin/Debug/netcoreapp2.2/Boxing_unbox.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/bin/Debug/netcoreapp2.2/Boxing_unbox.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/bin/Debug/netcoreapp2.2/Boxing_unbox.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/bin/Debug/netcoreapp2.2/Boxing_unbox.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/bin/Debug/netcoreapp2.2/Boxing_unbox.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/obj/Debug/netcoreapp2.2/Boxing_unbox.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/obj/Debug/netcoreapp2.2/Boxing_unbox.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/obj/Debug/netcoreapp2.2/Boxing_unbox.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/obj/Debug/netcoreapp2.2/Boxing_unbox.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/obj/Debug/netcoreapp2.2/Boxing_unbox.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Boxing_unbox/obj/Debug/netcoreapp2.2/Boxing_unbox.pdb
