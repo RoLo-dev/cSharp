@@ -1,0 +1,11 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/bin/Debug/netcoreapp2.2/Basic_13.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Basic_13/obj/Debug/netcoreapp2.2/Basic_13.pdb
