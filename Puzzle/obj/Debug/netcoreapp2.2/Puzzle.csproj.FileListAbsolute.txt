@@ -1,0 +1,11 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/bin/Debug/netcoreapp2.2/Puzzle.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/bin/Debug/netcoreapp2.2/Puzzle.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/bin/Debug/netcoreapp2.2/Puzzle.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/bin/Debug/netcoreapp2.2/Puzzle.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/bin/Debug/netcoreapp2.2/Puzzle.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/obj/Debug/netcoreapp2.2/Puzzle.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/obj/Debug/netcoreapp2.2/Puzzle.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/obj/Debug/netcoreapp2.2/Puzzle.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/obj/Debug/netcoreapp2.2/Puzzle.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/obj/Debug/netcoreapp2.2/Puzzle.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/Puzzle/obj/Debug/netcoreapp2.2/Puzzle.pdb
