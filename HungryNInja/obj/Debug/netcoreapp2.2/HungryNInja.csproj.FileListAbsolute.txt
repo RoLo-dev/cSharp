@@ -1,0 +1,11 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/obj/Debug/netcoreapp2.2/HungryNInja.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/obj/Debug/netcoreapp2.2/HungryNInja.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/obj/Debug/netcoreapp2.2/HungryNInja.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/obj/Debug/netcoreapp2.2/HungryNInja.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/bin/Debug/netcoreapp2.2/HungryNInja.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/bin/Debug/netcoreapp2.2/HungryNInja.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/bin/Debug/netcoreapp2.2/HungryNInja.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/bin/Debug/netcoreapp2.2/HungryNInja.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/bin/Debug/netcoreapp2.2/HungryNInja.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/obj/Debug/netcoreapp2.2/HungryNInja.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/HungryNInja/obj/Debug/netcoreapp2.2/HungryNInja.pdb
