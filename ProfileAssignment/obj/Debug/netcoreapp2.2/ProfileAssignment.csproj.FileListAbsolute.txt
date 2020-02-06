@@ -1,0 +1,14 @@
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/bin/Debug/netcoreapp2.2/ProfileAssignment.deps.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/bin/Debug/netcoreapp2.2/ProfileAssignment.runtimeconfig.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/bin/Debug/netcoreapp2.2/ProfileAssignment.runtimeconfig.dev.json
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/bin/Debug/netcoreapp2.2/ProfileAssignment.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/bin/Debug/netcoreapp2.2/ProfileAssignment.pdb
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.csprojAssemblyReference.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.csproj.CoreCompileInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.RazorAssemblyInfo.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.RazorAssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.AssemblyInfoInputs.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.AssemblyInfo.cs
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.RazorTargetAssemblyInfo.cache
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.dll
+/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/ProfileAssignment/obj/Debug/netcoreapp2.2/ProfileAssignment.pdb
