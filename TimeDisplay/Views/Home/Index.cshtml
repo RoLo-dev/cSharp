@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Courier New', sans-serif;
+            font-size: 18px;
+        }
+        .wrapper{
+            width: 90%;
+            margin: 0 auto;
+        }
+        header{
+            padding: 1.5rem 0;
+            margin-bottom: 5rem;
+        }
+        header h1{
+            text-align: center;
+        }
+        .date>*{
+            margin-bottom: 1rem;
+        }
+        .date{
+            margin: 0 auto;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 900;
+            color: firebrick;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>The Curent Time and Date</h1>
+        </div>
+    </header>
+
+    <div class="date">
+        <p>@ViewBag.Date</p>
+        <p>@ViewBag.Time</p>
+    </div>
+    
+</body>
+</html>
