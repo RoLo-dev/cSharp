@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper flex">
+            <div class="logo">
+                <h1>Portfolio II</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <h2>Contact Me</h2>
+
+    <section class="wrapper">
+        <form action="/redirect" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+</html>
