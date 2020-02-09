@@ -1,0 +1,20 @@
+@using ModelForms.Models
+@model Survey
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey with Model</title>
+</head>
+<body>
+    <div class="wrapper results">
+        <h2>Submitted Info</h2>
+        <p>Name: @Model.Name</p>
+        <p>Location: @Model.Location</p>
+        <p>Language: @Model.Language</p>
+        <p>Comment: @Model.Comment</p>
+        <a href="/">Go Home</a>
+    </div>
+</body>
+</html>
