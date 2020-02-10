@@ -1,0 +1,23 @@
+﻿@model User
+<header>
+    <div class="wrapper">
+        <h1>Validating a Form</h1>
+        <h4>Enter your information</h4>
+    </div>
+</header>
+
+<div class="wrapper main">
+    <form asp-action="Create" class="flex-col"  asp-controller="Home" method="POST">
+        <span class="red" asp-validation-for="FirstName"></span>
+        <input type="text" asp-for="FirstName" placeholder="First Name">
+        <span class="red" asp-validation-for="LastName"></span>
+        <input type="text" asp-for="LastName" placeholder="Last Name">
+        <span class="red" asp-validation-for="Age"></span>
+        <input type="number" asp-for="Age" placeholder="Age">
+        <span class="red" asp-validation-for="Email"></span>
+        <input type="email" asp-for="Email" placeholder="Email">
+        <span class="red" asp-validation-for="Password"></span>
+        <input type="password" asp-for="Password" placeholder="Password">
+        <input type="submit" class="btn" value="Submit">
+    </form>
+</div>
