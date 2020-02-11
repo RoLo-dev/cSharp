@@ -1,0 +1,43 @@
+﻿@model User
+
+<header>
+    <div class="wrapper">
+        <h1>Dojo Survey with Validations</h1>
+    </div>
+</header>
+<div class="wrapper">
+    <form asp-action="Create" asp-controller="Home" class="flex-col" method="POST">
+        <span class="red" asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name">
+        <span class="red" asp-validation-for="Location"></span>
+        <label asp-for="Location"></label>
+        <select asp-for="Location">
+            <option value="Seattle">Seattle</option>
+            <option value="Orange County">Orange County</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Dallas">Dallas</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Tulsa">Tulsa</option>
+            <option value="Oakland">Oakland</option>
+            <option value="Boise">Boise</option>
+            <option value="Chicago">Chicago</option>
+        </select>
+        <span class="red" asp-validation-for="Language"></span>
+        <label asp-for="Language"></label>
+        <select asp-for="Language">
+            <option value="React">React</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Flask">Flask</option>
+            <option value="Python">Python</option>
+            <option value="Vue">Vue</option>
+            <option value="C#">C#</option>
+            <option value=".Net">ASP.NET</option>
+        </select>
+        <span class="red" asp-validation-for="Comment"></span>
+        <label asp-for="Comment"></label>
+        <textarea asp-for="Comment"></textarea>
+        <input type="submit" class="btn" value="Submit">
+    </form>
+</div>
