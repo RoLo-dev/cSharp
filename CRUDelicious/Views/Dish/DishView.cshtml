@@ -1,0 +1,40 @@
+@model Dish
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDelicious</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper flex">
+            <div class="logo">
+                <h1>@Model.Name</h1>
+                <h4>@Model.Chef</h4>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a asp-action="Index" asp-controller="Dish">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="dish-desc">
+            <p><span class="bold">Description:</span> @Model.Description</p>
+            <p><span class="bold">Calories:</span> @Model.Calories</p>
+            <p><span class="bold">Tastiness:</span> @Model.Tastiness</p>
+        </div>
+        <form asp-action="DeleteDish" asp-controller="Dish" method="POST">
+            <input type="hidden" name="dishid" value="@Model.DishId">
+            <input type="submit" class="btn" value="Delete">
+        </form>
+        <a href="/edit/@Model.DishId">Edit</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+@model Dish
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDelicious</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper flex">
+            <div class="logo">
+                <h1>Edit @Model.Name</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a asp-action="Index" asp-controller="Dish">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <form action="/editDish/@Model.DishId" class="flex-col" method="POST">
+            <span class="red" asp-validation-for="Chef"></span>
+            <label asp-for="Chef"></label>
+            <input asp-for="Chef" value="@Model.Chef">
+
+            <span class="red" asp-validation-for="Name"></span>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" value="@Model.Name">
+
+            <span class="red" asp-validation-for="Calories"></span>
+            <label asp-for="Calories"></label>
+            <input asp-for="Calories" value="@Model.Calories">
+
+            <span class="red" asp-validation-for="Tastiness"></span>
+            <label asp-for="Tastiness"></label>
+            <select asp-for="Tastiness" value="@Model.Tastiness">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <span class="red" asp-validation-for="Description"></span>
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description">@Model.Description</textarea>
+
+            <input type="submit" class="btn" value="Edit Dish">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+@model List<Dish>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDelicious</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper flex">
+            <div class="logo">
+                <h1>CRUDelicious</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a asp-action="AddDish" asp-controller="Dish">Add a dish</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <h3>Check out some recent dishes!</h3>
+        <div class="dish-desc">
+        @foreach(var dish in Model)
+        {
+            <p><a href="/@dish.DishId">@dish.Name</a> by  @dish.Chef</p>
+        }
+        </div>
+        
+    </div>
+</body>
+</html>
