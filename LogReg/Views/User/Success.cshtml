@@ -1,0 +1,19 @@
+@model User
+
+<header>
+    <div class="wrapper flex">
+        <div class="title">
+            <h1>Welcome @Model.FirstName</h1>
+        </div>
+        <div class="link">
+            <a href="logout">Logout</a>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <div class="user-content">
+        <p>@Model.FirstName</p>
+        <p>@Model.LastName</p>
+    </div>
+</div>

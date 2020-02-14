@@ -1,0 +1,38 @@
+@model User
+
+<header>
+    <div class="wrapper flex">
+        <div class="title">
+            <h1>Register</h1>
+        </div>
+        <div class="link">
+            <a href="login">Login</a>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <form asp-action="Register" asp-controller="User" class="flex-col" method="POST">
+        <span class="red" asp-validation-for="FirstName"></span>
+        <label asp-for="FirstName"></label>
+        <input type="text" asp-for="FirstName">
+
+        <span class="red" asp-validation-for="LastName"></span>
+        <label asp-for="LastName"></label>
+        <input type="text" asp-for="LastName">
+
+        <span class="red" asp-validation-for="Email"></span>
+        <label asp-for="Email"></label>
+        <input asp-for="Email">
+
+        <span class="red" asp-validation-for="Password"></span>
+        <label asp-for="Password"></label>
+        <input asp-for="Password">
+
+        <span class="red" asp-validation-for="Confirm"></span>
+        <label asp-for="Confirm"></label>
+        <input asp-for="Confirm">
+
+        <input type="submit" class="btn"  value="Signup">
+    </form>
+</div>

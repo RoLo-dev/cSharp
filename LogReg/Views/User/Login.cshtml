@@ -1,0 +1,26 @@
+@model Login
+
+<header>
+    <div class="wrapper flex">
+        <div class="title">
+            <h1>Login</h1>
+        </div>
+        <div class="link">
+            <a href="/">Register</a>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <form asp-action="LogInUser" asp-controller="User" class="flex-col" method="POST">
+        <span class="red" asp-validation-for="LEmail"></span>
+        <label asp-for="LEmail"></label>
+        <input asp-for="LEmail">
+
+        <span class="red" asp-validation-for="LPassword"></span>
+        <label asp-for="LPassword"></label>
+        <input asp-for="LPassword">
+
+        <input type="submit" class="btn" value="Login">
+    </form>
+</div>

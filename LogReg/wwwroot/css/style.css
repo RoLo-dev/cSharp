@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.red{
+    color: firebrick;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: cornflowerblue;
+    transition: color 0.7s ease-in;
+}
+a:hover{
+    color: darkblue;
+    transition: color 0.3s ease-out;
+}
+header{
+    padding: 1.5em 0;
+    margin-bottom: 5em;
+}
+
+
+
+form>*{
+    margin-bottom: 12px;
+}
+form{
+    width: 40%;
+}
+form input,
+form textarea{
+    border: 2px solid #000;
+    font-size: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+}
+form input{
+    height: 1.5em;
+}
+form textarea{
+    height: 5em;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.7s ease-in;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
