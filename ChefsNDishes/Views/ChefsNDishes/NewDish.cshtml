@@ -1,0 +1,49 @@
+@model Dish
+
+<header>
+    <div class="wrapper flex">
+        <div class="title">
+            <h1>Add a Dish</h1>
+        </div>
+        <div class="link">
+            <a href="/">Home</a>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <form asp-action="NewDish" asp-controller="ChefsNDishes" class="flex-col" method="POST">
+        <span asp-validation-for="DishName"></span>
+        <label asp-for="DishName"></label>
+        <input asp-for="DishName">
+
+        <span asp-validation-for="Calories"></span>
+        <label asp-for="Calories"></label>
+        <input type="text" asp-for="Calories">
+
+        <span asp-validation-for="ChefId"></span>
+        <label asp-for="ChefId"></label>
+        <select asp-for="ChefId">
+            @foreach(var chef in ViewBag.AllChefs)
+            {
+                <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
+            }
+        </select>
+
+        <span asp-validation-for="Tastiness"></span>
+        <label asp-for="Tastiness"></label>
+        <select asp-for="Tastiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <span asp-validation-for="Description"></span>
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description"></textarea>
+
+        <input type="submit" class="btn" value="Add Dish">
+    </form>
+</div>
