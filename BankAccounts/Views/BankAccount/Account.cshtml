@@ -1,0 +1,37 @@
+@model Transaction
+
+<header>
+    <div class="wrapper flex">
+        <div class="title">
+            <h1>Welcome, @ViewBag.retrievedUser.FirstName</h1>
+        </div>
+        <div class="balance">
+            <a asp-action="Logout">Logout</a>
+            <p class="bold">Current balance: $@ViewBag.Total.ToString("0.00")</p>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <form asp-action="NewTrans" asp-controller="BankAccount" class="flex-col" method="POST">
+        <span class="red" asp-validation-for="Amount"></span>
+        <label asp-for="Amount"></label>
+        <input type="text" asp-for="Amount">
+
+        <input type="submit" class="btn" value="Submit">
+    </form>
+
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+        @foreach(var trans in @ViewBag.retrievedUser.UserTransactions)
+        {
+        <tr>
+            <td>$@trans.Amount.ToString("0.00")</td>
+            <td>@trans.CreatedAt</td>
+        </tr>
+        }
+    </table>
+</div>
