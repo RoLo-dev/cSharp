@@ -1,0 +1,59 @@
+@model Dashboard
+
+<header>
+    <div class="wrapper flex">
+        <div class="title">
+            <h1 class="unique-font">Welcome @Model.UserId.FirstName</h1>
+        </div>
+        <div class="link">
+            <a asp-action="Logout" asp-controller="Home">Logout</a>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <a class="button new" asp-action="NewWedPage" asp-controller="Home">New Wedding</a>
+
+    <table>
+        <tr>
+            <th class="morePadding">Wedding</th>
+            <th class="morePadding">Date</th>
+            <th>Guest</th>
+            <th>Action</th>
+        </tr>
+        @foreach(var wedding in Model.WeddingList)
+        {
+        <tr>
+            <td>
+                <a asp-action="WeddingDetails" asp-route-weddingId="@wedding.WeddingId" asp-controller="Home">@wedding.WedderOne & @wedding.WedderTwo</a>
+            </td>
+            <td>@wedding.Date.ToString("MM dd, yyyy")</td>
+            <td>@wedding.RSVPs.Count</td>
+            @if(wedding.UserId == Model.UserId.UserId)
+            {
+            <td>
+                <form asp-action="Delete" asp-route-weddingId="@wedding.WeddingId" asp-controller="Home" method="POST">
+                    <button>Delete</button>
+                </form>
+            </td>
+            } 
+            else if(wedding.RSVPs.Any(r => r.UserId == Model.UserId.UserId))
+            {
+                <td>
+                    <form asp-action="unRSVP" asp-controller="Home" asp-route-weddingId="@wedding.WeddingId" method="POST">
+                        <button>unRSVP</button>
+                    </form>
+                </td>
+            }
+            else
+            {
+                <td>
+                    <form asp-action="RSVP" asp-controller="Home" asp-route-weddingId="@wedding.WeddingId" method="POST">
+                        <button>RSVP</button>
+                    </form>
+                </td>
+            }
+        </tr>
+        }
+    </table>
+</div>

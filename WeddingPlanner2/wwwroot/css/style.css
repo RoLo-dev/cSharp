@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;    /* Don't forget to change the typeface */
+}
+header{
+    padding: 1.5em 0;
+    margin-bottom: 5em;
+}
+.unique-font{
+    font-family: "Great Vibes", sans-serif;
+    font-size: 3.9rem;
+    font-weight: 400;
+}
+h3{
+    margin-bottom: 2em;
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+    transition: all 0.7s ease-out;
+}
+a:hover{
+    color: darkblue;
+    transition: color 0.3s ease-in;
+}
+ul li{
+    list-style: none;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.bold{
+    font-weight: bold;
+}
+.flex{    /* Ex. Navigation */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-split{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-center{    /* Ex. Banner, right smack in the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{    /* Ex. Columns */
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    color: firebrick;
+}
+
+.col{
+    width: 49%;
+}
+form>*{
+    margin-bottom: 12px;
+}
+form input{
+    height: 1.5rem;
+}
+form textarea{
+    height: 5rem;
+}
+form input,
+input,
+form textarea{
+    border: 2px solid #000;
+    outline: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.7s;
+}
+.btn:hover{
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+table th{
+    padding-right: 1em;
+}
+table .morePadding{
+    padding-right: 7em;
+}
+.new{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.button{
+    color: #000;
+    padding: 3px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    font-size: 0.8em;
+    border: 2px solid #000;
+    transition: all 0.7s ease-out;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+
