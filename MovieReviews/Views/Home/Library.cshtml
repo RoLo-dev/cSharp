@@ -1,0 +1,86 @@
+@model MovieList
+
+@using Microsoft.AspNetCore.Http;
+
+@section LogReg{
+    <link rel="stylesheet" href="~/css/LogReg.css">
+}
+
+<header>
+    <div class="wrapper libraryHead">
+        <div class="title">
+             <a asp-action="Index" asp-controller="Home">
+                <h1 class="second-font logo">MovieQuest</h1>
+            </a>
+        </div>
+        <div class="links">
+            <ul>
+                @if(Context.Session.GetInt32("UserId")==null)
+                {
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a asp-action="LogPage" asp-controller="Home">Login</a>
+                    </li>
+                    <li>
+                        <a asp-action="RegPage" asp-controller="Home" class="reg">Register</a>
+                    </li>
+                }else
+                {
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <p>@Context.Session.GetString("Email")</p>
+                    </li>
+                    <li>
+                        <a href="">Logout</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <a id="addMovie">Add a movie</a>
+
+    <div id="modal">
+        <div id="modal-content">
+            <span id="closeBtn">&times;</span>
+            <partial name="NewMovie"/>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper libBody">
+    <div class="libCol">
+            @if(Model.MovieToAdd!=null){
+        <div class="wrapper movieInfo">
+                <partial name="MovieDetails"/>
+        </div>
+            }
+    </div>
+    <div class="libCol">
+        <div class="wrapper movies">
+            <table>
+                <tr id="firstRow">
+                    <th>Movie</th>
+                    <th>Genre</th>
+                    <th>Release Date</th>
+                </tr>
+                @foreach(var movie in Model.MovieLibrary)
+                {
+                <tr>
+                    <td>
+                        <a class="movie-name" asp-action="MovieDetails" asp-route-MovieId="@movie.MovieId" asp-controller="Home">@movie.MovieName</a>
+                    </td>
+                    <td>@movie.Genre</td>
+                    <td>@movie.ReleaseDate.ToString("MM/dd/yyyy")</td>
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

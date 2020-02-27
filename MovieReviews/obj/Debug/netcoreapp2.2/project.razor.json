@@ -2971,6 +2971,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/Login.cshtml",
+      "TargetPath": "Views/Home/Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/_ViewImports.cshtml",
       "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -2983,6 +2988,26 @@
     {
       "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/NewMovie.cshtml",
+      "TargetPath": "Views/Home/NewMovie.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/Register.cshtml",
+      "TargetPath": "Views/Home/Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/MovieDetails.cshtml",
+      "TargetPath": "Views/Home/MovieDetails.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/Library.cshtml",
+      "TargetPath": "Views/Home/Library.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    background-color: #1E141B;
+    color: #FFC054;
+}
+.second-font{
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 400;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+}
+header{
+    padding: 1.5rem  0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 3rem;
+    letter-spacing: 4px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0 10px 4px 10px;
+}
+.mainHead,
+.appHead,
+.libraryHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links ul li{
+    display: inline-block;
+    margin-left: 4.5rem;
+}
+.links ul li a{
+    color: #FFC054;
+    font-size: 1.15rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.7s;
+}
+.links ul li a:hover,
+.links ul li a:focus{
+    color: #fff;
+    border-color: #fff;
+    transition: all 0.3s;
+}
+.links ul li .reg{
+    background-color: #FFC054 !important;
+    color: #1E141B !important;
+    border: 1px solid #FFC054 !important;
+    padding: 1px 25px;
+    border-radius: 30px;
+    transition: all 0.7s;
+}
+.links ul li .reg:hover,
+.links ul li .reg:focus{
+    background-color: transparent !important;
+    color: #FFC054 !important;
+    transition: all 0.3s;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #4C464D;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: #151015; 
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1F1820;
+  border-radius: 12px;
+}

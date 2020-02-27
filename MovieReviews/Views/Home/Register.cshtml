@@ -1,0 +1,56 @@
+@model User
+
+@section LogReg{
+    <link rel="stylesheet" href="~/css/LogReg.css">
+}
+
+<header>
+    <div class="wrapper appHead">
+        <div class="title">
+            <a asp-action="Index" asp-controller="Home">
+                <h1 class="second-font logo">MovieQuest</h1>
+            </a>
+        </div>
+        <div>
+            <h1 class="second-font headerTitle">Register</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a asp-action="Index" asp-controller="Home" class="reg">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper appBody">
+
+    <div class="form-box">
+        <form asp-action="Register" asp-controller="Home" class="flex-col" method="POST">
+            <span asp-validation-for="FirstName" class="error"></span>
+            <label asp-for="FirstName"></label>
+            <input type="text" asp-for="FirstName">
+
+            <span asp-validation-for="LastName" class="error"></span>
+            <label asp-for="LastName"></label>
+            <input type="text" asp-for="LastName">
+
+            <span asp-validation-for="Email" class="error"></span>
+            <label asp-for="Email"></label>
+            <input asp-for="Email">
+
+            <span asp-validation-for="Password" class="error"></span>
+            <label asp-for="Password"></label>
+            <input asp-for="Password">
+
+            <span asp-validation-for="Confirm" class="error"></span>
+            <label asp-for="Confirm"></label>
+            <input asp-for="Confirm">
+
+            <input type="submit" value="Register" class="btn">
+            <a asp-action="LogPage" asp-controller="Home" class="form-link">Already have an account?</a>
+        </form>
+    </div>
+
+</div>

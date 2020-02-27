@@ -1,0 +1,44 @@
+@model Login
+
+@section LogReg{
+    <link rel="stylesheet" href="~/css/LogReg.css">
+}
+
+<header>
+    <div class="wrapper appHead">
+        <div class="title">
+            <a asp-action="Index" asp-controller="Home">
+                <h1 class="second-font logo">MovieQuest</h1>
+            </a>
+        </div>
+        <div>
+            <h1 class="second-font headerTitle">Login</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a asp-action="Index" asp-controller="Home" class="reg">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper appBody">
+
+    <div class="form-box">
+        <form asp-action="Login" asp-controller="Home" class="flex-col" method="POST">
+            <span asp-validation-for="LogEmail" class="error"></span>
+            <label asp-for="LogEmail"></label>
+            <input type="text" asp-for="LogEmail">
+
+            <span asp-validation-for="LogPassword" class="error"></span>
+            <label asp-for="LogPassword"></label>
+            <input asp-for="LogPassword">
+
+            <input type="submit" value="Login" class="btn">
+            <a asp-action="RegPage" asp-controller="Home" class="form-link">Don't have an account?</a>
+        </form>
+    </div>
+
+</div>

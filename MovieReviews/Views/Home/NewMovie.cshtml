@@ -1,0 +1,42 @@
+@model MovieList
+
+@if(ViewBag.hasError==true)
+{
+<script>
+    (function openModal() {
+        modal.style.opacity = '1';
+        modal.style.visibility = 'visible'
+        modalContent.style.top = '0';
+    })()
+</script>
+}
+
+<div class="wrapper">
+    <form asp-action="NewMovie" asp-controller="Home" class="flex-col" method="POST">
+        <span asp-validation-for="MovieToAdd.MovieName" class="error"></span>
+        <label asp-for="MovieToAdd.MovieName"></label>
+        <input type="text" asp-for="MovieToAdd.MovieName">
+
+        <span asp-validation-for="MovieToAdd.Genre" class="error"></span>
+        <label asp-for="MovieToAdd.Genre"></label>
+        <input type="text" asp-for="MovieToAdd.Genre">
+
+        <span asp-validation-for="MovieToAdd.Director" class="error"></span>
+        <label asp-for="MovieToAdd.Director"></label>
+        <input type="text" asp-for="MovieToAdd.Director">
+        
+        <span asp-validation-for="MovieToAdd.ReleaseDate" class="error"></span>
+        <label asp-for="MovieToAdd.ReleaseDate"></label>
+        <input type="date" asp-for="MovieToAdd.ReleaseDate">
+
+        <span asp-validation-for="MovieToAdd.URL" class="error"></span>
+        <label asp-for="MovieToAdd.URL"></label>
+        <input type="text" asp-for="MovieToAdd.URL">
+
+        <span asp-validation-for="MovieToAdd.Desc" class="error"></span>
+        <label asp-for="MovieToAdd.Desc"></label>
+        <textarea asp-for="MovieToAdd.Desc"></textarea>
+
+        <input type="submit" value="Create" class="btn">
+    </form>
+</div>

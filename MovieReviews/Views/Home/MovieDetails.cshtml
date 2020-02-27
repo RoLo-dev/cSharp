@@ -1,0 +1,24 @@
+@model MovieList
+
+@section LogReg{
+    <link rel="stylesheet" href="~/css/LogReg.css">
+}
+
+<div class="wrapper">
+
+    <div class="movieInfo">
+        <div id="poster">
+            <img src="@Model.MovieToAdd.URL" class="pic">
+        </div>
+
+        <div id="details">
+            <p><span>Movie name:</span> @Model.MovieToAdd.MovieName</p>
+            <p><span>Genre:</span> @Model.MovieToAdd.Genre</p>
+            <p><span>Director:</span> @Model.MovieToAdd.Director</p>
+            <p><span>Release Date:</span> @Model.MovieToAdd.ReleaseDate</p>
+            <p><span>Description:</span> @Model.MovieToAdd.Desc</p>
+        </div>
+    </div>
+    <div class="reviews"></div>  
+
+</div>

@@ -3,11 +3,53 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MovieReviews</title>
+    <title>MovieQuest</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Six+Caps&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/Style.css" />
+    @RenderSection("Landing", required:false)
+    @RenderSection("LogReg", required:false)
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     @RenderBody()
+
+
+
+    <!-- This is for the Library.cshtml to display the form to add a movie -->
+    <script>
+        let addMovieBtn = document.getElementById('addMovie');
+        let modal = document.getElementById('modal');
+        let modalContent = document.getElementById('modal-content');
+        let closeBtn = document.getElementById('closeBtn');
+
+        addMovieBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+        window.addEventListener('click', outsideClick);
+
+        function openModal() {
+            modal.style.opacity = '1';
+            modal.style.visibility = 'visible'
+            modalContent.style.top = '0';
+        }
+        function closeModal() {
+            modal.style.opacity = '0';
+            modal.style.visibility = 'hidden';
+            modal.style.transition = '0.5s';
+            modalContent.style.top = '110%';
+        }
+        function outsideClick(e) {
+            if (e.target == modal) {
+                modal.style.opacity = '0';
+                modal.style.visibility = 'hidden';
+                modal.style.transition = '0.5s';
+                modalContent.style.top = '110%';
+            }
+        }
+    </script>
 </body>
 </html>
