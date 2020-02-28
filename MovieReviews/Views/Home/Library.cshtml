@@ -1,9 +1,9 @@
 @model MovieList
-
 @using Microsoft.AspNetCore.Http;
 
 @section LogReg{
     <link rel="stylesheet" href="~/css/LogReg.css">
+    <link rel="stylesheet" href="~/css/Library.css">
 }
 
 <header>
@@ -32,10 +32,10 @@
                         <a href="">About</a>
                     </li>
                     <li>
-                        <p>@Context.Session.GetString("Email")</p>
+                        <a asp-action="Logout" asp-controller="Home">Logout</a>
                     </li>
                     <li>
-                        <a href="">Logout</a>
+                        <p class="white">@Context.Session.GetString("Email")</p>
                     </li>
                 }
             </ul>
@@ -55,18 +55,40 @@
 </div>
 
 <div class="wrapper libBody">
-    <div class="libCol">
-            @if(Model.MovieToAdd!=null){
-        <div class="wrapper movieInfo">
-                <partial name="MovieDetails"/>
+
+    <div id="col1" class="libCol">
+        <div id="movieInfo" class="wrapper">
+            
+            <div class="movie">
+                <div id="poster">
+                    <img id="moviePoster" src="" class="pic">
+                </div>
+
+                <div id="details">
+                    <h4>Movie name:</h4>
+                    <p id="movieName"></p>
+                    <h4>Genre:</h4>
+                    <p id="genre"></p>
+                    <h4>Director:</h4>
+                    <p id="director"></p>
+                    <h4>Release date:</h4>
+                    <p id="date"></p>
+                    <h4>Description:</h4>
+                    <p id="desc"></p>
+                </div>
+            </div>
+
+            <div class="reviews"></div>  
+            
         </div>
-            }
     </div>
-    <div class="libCol">
+
+    <div id="col2" class="libCol">
         <div class="wrapper movies">
+
             <table>
                 <tr id="firstRow">
-                    <th>Movie</th>
+                    <th id="test">Movie</th>
                     <th>Genre</th>
                     <th>Release Date</th>
                 </tr>
@@ -74,7 +96,10 @@
                 {
                 <tr>
                     <td>
-                        <a class="movie-name" asp-action="MovieDetails" asp-route-MovieId="@movie.MovieId" asp-controller="Home">@movie.MovieName</a>
+                        @*<a id="infoBtn" class="movie-name" asp-action="MovieDetails" asp-route-MovieId="@movie.MovieId">@movie.MovieName</a>*@
+                        
+                        <button id="infoBtn" class="movie-name" onclick="test(@movie.MovieId)">@movie.MovieName</button>
+                        <input type="hidden" class="mid">
                     </td>
                     <td>@movie.Genre</td>
                     <td>@movie.ReleaseDate.ToString("MM/dd/yyyy")</td>
@@ -82,5 +107,6 @@
                 }
             </table>
         </div>
+
     </div>
 </div>

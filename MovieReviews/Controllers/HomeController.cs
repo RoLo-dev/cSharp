@@ -7,6 +7,7 @@ using MovieReviews.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace MovieReviews.Controllers
 {
@@ -65,6 +66,7 @@ namespace MovieReviews.Controllers
             return View("Login");
         }
 
+
         [HttpPost("moviequest/login")]
         public IActionResult Login(Login user)
         {
@@ -110,6 +112,7 @@ namespace MovieReviews.Controllers
             return View("NewMovie");
         }
 
+
         [HttpPost("moviequest/new/movie")]
         public IActionResult NewMovie(MovieList newMovie)
         {
@@ -148,7 +151,17 @@ namespace MovieReviews.Controllers
             .ToList();
             a.MovieToAdd = movieInfo;
             a.MovieLibrary = AllMovies;
-            return View(a);
+            // string v = JsonConvert.SerializeObject(a);
+            // string v = JsonConvert.SerializeObject(AllMovies);
+            return Json(movieInfo);
+        }
+
+
+        [HttpGet("moviequest/logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return View("Library");
         }
 
 

@@ -18,6 +18,9 @@ html{
     margin: 0 auto;
     width: 90%;
 }
+.white{
+    color: #fff;
+}
 header{
     padding: 1.5rem  0;
 }

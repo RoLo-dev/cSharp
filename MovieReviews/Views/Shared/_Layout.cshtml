@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/Style.css" />
     @RenderSection("Landing", required:false)
     @RenderSection("LogReg", required:false)
+    @RenderSection("Scripts", required:false)
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -20,8 +21,31 @@
 
 
 
-    <!-- This is for the Library.cshtml to display the form to add a movie -->
     <script>
+        function test(e){
+            $.ajax({
+                url: "/moviequest/movie/details/"+e,
+                type: "get",
+                dataType: "json",
+                success: function (result) {
+                    console.log(result);
+
+                    document.getElementById("movieInfo").style.display = 'block';
+                    document.getElementById("moviePoster").src = result.url;
+                    document.getElementById("movieName").innerHTML = result.movieName;
+                    document.getElementById("genre").innerHTML = result.genre;
+                    document.getElementById("director").innerHTML = result.director;
+                    document.getElementById("date").innerHTML = result.releaseDate;
+                    document.getElementById("desc").innerHTML = result.desc;
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+        };
+
+
+        // This is for the Library.cshtml to display the form to add a movie 
         let addMovieBtn = document.getElementById('addMovie');
         let modal = document.getElementById('modal');
         let modalContent = document.getElementById('modal-content');
