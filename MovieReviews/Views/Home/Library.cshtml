@@ -4,6 +4,7 @@
 @section LogReg{
     <link rel="stylesheet" href="~/css/LogReg.css">
     <link rel="stylesheet" href="~/css/Library.css">
+
 }
 
 <header>
@@ -78,7 +79,26 @@
                 </div>
             </div>
 
-            <div class="reviews"></div>  
+            <div class="reviews">
+
+                <h2>Reviews</h2>
+                @if(Context.Session.GetInt32("UserId")==null)
+                {
+                    <a asp-action="LogPage" asp-controller="Home" class="form-link">Login or Register to leave a review</a>
+                }
+                else
+                {
+                    <button id="createRevBtn">Leave a review</button>
+                    <div id="reviewForm">
+                        <partial name="NewReview" />
+                    </div>
+                }
+
+                <div class="single-review">
+                    
+                </div>
+
+            </div>  
             
         </div>
     </div>
@@ -96,8 +116,6 @@
                 {
                 <tr>
                     <td>
-                        @*<a id="infoBtn" class="movie-name" asp-action="MovieDetails" asp-route-MovieId="@movie.MovieId">@movie.MovieName</a>*@
-                        
                         <button id="infoBtn" class="movie-name" onclick="test(@movie.MovieId)">@movie.MovieName</button>
                         <input type="hidden" class="mid">
                     </td>

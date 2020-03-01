@@ -12,7 +12,6 @@ namespace MovieReviews.Models
 
         [Required(ErrorMessage="Enter a movie name")]
         [Display(Name="Movie name:")]
-        [RegularExpression(@"^(([A-za-z]+[\s]{1}[A-za-z]+)|([A-Za-z]+))$", ErrorMessage="Please enter a valid name")]
         public string MovieName {get;set;}
 
         [Required(ErrorMessage="Enter the genre of the movie")]

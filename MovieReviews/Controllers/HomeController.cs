@@ -126,8 +126,7 @@ namespace MovieReviews.Controllers
                     dbContext.SaveChanges();
                     return RedirectToAction("Library");
                 } else{
-                    // var hasError = true;
-                     List<Movie> AllMovies = dbContext.Movies
+                    List<Movie> AllMovies = dbContext.Movies
                     .Include(m => m.MovieReviews)
                     .ToList();
                     MovieList moviesInDb = new MovieList();
@@ -146,14 +145,33 @@ namespace MovieReviews.Controllers
             .Include(m => m.MovieReviews)
             .FirstOrDefault(m => m.MovieId == MovieId);
             MovieList a = new MovieList();
-             List<Movie> AllMovies = dbContext.Movies
+            List<Movie> AllMovies = dbContext.Movies
             .Include(m => m.MovieReviews)
             .ToList();
             a.MovieToAdd = movieInfo;
             a.MovieLibrary = AllMovies;
-            // string v = JsonConvert.SerializeObject(a);
-            // string v = JsonConvert.SerializeObject(AllMovies);
             return Json(movieInfo);
+        }
+
+
+        [HttpPost("moviequest/review/new")]
+        public IActionResult NewReview(MovieList newReview)
+        {
+            if(ModelState.IsValid)
+            {
+                dbContext.Reviews.Add(newReview.ReviewToAdd);
+                dbContext.SaveChanges();
+                return RedirectToAction("Library");
+            } else
+            {
+                List<Review> AllReviews = dbContext.Reviews
+                .Include(r => r.UserId)
+                .ToList();
+                MovieList reviewsInDb = new MovieList();
+                reviewsInDb.MovieReviews = AllReviews;
+                ViewBag.reviewError = true;
+                return View("Library", reviewsInDb);
+            }
         }
 
 
@@ -161,7 +179,7 @@ namespace MovieReviews.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return View("Library");
+            return View("Index");
         }
 
 

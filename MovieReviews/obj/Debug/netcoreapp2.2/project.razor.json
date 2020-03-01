@@ -3001,13 +3001,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/MovieDetails.cshtml",
-      "TargetPath": "Views/Home/MovieDetails.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/Library.cshtml",
+      "TargetPath": "Views/Home/Library.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/Library.cshtml",
-      "TargetPath": "Views/Home/Library.cshtml",
+      "FilePath": "/Users/rolandolopantzi/Documents/CodingDojo/Week10-12/MovieReviews/Views/Home/NewReview.cshtml",
+      "TargetPath": "Views/Home/NewReview.cshtml",
       "FileKind": "mvc"
     },
     {

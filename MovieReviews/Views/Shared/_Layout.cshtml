@@ -22,6 +22,8 @@
 
 
     <script>
+        
+
         function test(e){
             $.ajax({
                 url: "/moviequest/movie/details/"+e,
@@ -73,6 +75,13 @@
                 modal.style.transition = '0.5s';
                 modalContent.style.top = '110%';
             }
+        }
+
+        document.getElementById('createRevBtn').addEventListener('click', showForm);
+
+        function showForm(){
+            console.log('Help')
+            $('#reviewForm').slideToggle('slow');
         }
     </script>
 </body>

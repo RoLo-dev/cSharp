@@ -75,6 +75,11 @@
 /* MOVIE TABLE */
 .movies{
     height: 100%;
+    overflow-y: hidden;
+}
+.movies:focus,
+.movies:hover,
+.movies:active{
     overflow-y: scroll;
 }
 .movies table{
@@ -104,7 +109,8 @@
     outline: 0;
     transition: all 0.7s;
 }
-.movies .movie-name:hover{
+.movies .movie-name:hover,
+.movies .movie-name:focus{
     color: #FFC054;
     cursor: pointer;
     transition: color 0.3s;
@@ -114,7 +120,12 @@
 /* MOVIE DETAILS */
 #movieInfo{
     display: none;
-    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    height: 100%;
+}
+#movieInfo:focus,
+#movieInfo:active,
+#movieInfo:hover{
     overflow-y: scroll;
 }
 .pic{
@@ -126,14 +137,44 @@
 .movie{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
-#poster{
-    width: 50%;
+.movie #poster{
+    width: 48%;
 }
 #details > *{
     margin-bottom: 5px;
+    font-size: 1.1rem;
 }
-#details{
-    width: 45%;
-    padding-right: 5px;
+.movie #details{
+    width: 48%;
+    padding-right: 8px;
+}
+#details #desc{
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+
+/* REVIEWS */
+#createRevBtn{
+    padding: 2px 35px;
+    color: #251D26;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans Condensed', serif;
+    margin-top: 1rem;
+    border-radius: 30px;
+    border: 1px solid #FFC054;
+    background-color: #FFC054;
+    transition: all 0.7s;
+}
+#createRevBtn:hover,
+#createRevBtn:focus{
+    cursor: pointer;
+    color: #FFC054;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+#reviewForm{
+    display: none;
 }

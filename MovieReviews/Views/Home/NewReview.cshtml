@@ -1,0 +1,23 @@
+@model MovieList
+@using Microsoft.AspNetCore.Http;
+
+@section LogReg{
+    <link rel="stylesheet" href="~/css/LogReg.css">
+    <link rel="stylesheet" href="~/css/Library.css">
+}
+
+<form asp-action="" asp-controller="Home" class="flex-col">
+    <span asp-validation="ReviewToAdd.ReviewTitle"></span>
+    <label asp-for="ReviewToAdd.ReviewTitle"></label>
+    <input type="text" asp-for="ReviewToAdd.ReviewTitle">
+
+    <span asp-validation="ReviewToAdd.Rating"></span>
+    <label asp-for="ReviewToAdd.Rating"></label>
+    <input asp-for="ReviewToAdd.Rating">
+
+    <span asp-validation="ReviewToAdd.Message"></span>
+    <label asp-for="ReviewToAdd.Message"></label>
+    <textarea asp-for="ReviewToAdd.Message"></textarea>
+
+    <input type="submit" class="btn" value="Submit">
+</form>

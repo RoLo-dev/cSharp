@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovieReviews.Models
@@ -10,5 +8,7 @@ namespace MovieReviews.Models
     {
         public List<Movie> MovieLibrary {get;set;}
         public Movie MovieToAdd {get;set;}
+        public List<Review> MovieReviews {get;set;}
+        public Review ReviewToAdd {get;set;}
     }
 }

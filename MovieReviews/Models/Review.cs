@@ -13,7 +13,7 @@ namespace MovieReviews.Models
 
         [Required(ErrorMessage="Enter a title for your review")]
         [Display(Name="Review title:")]
-        [MinLength(2, ErrorMessage="Title should be more than 2 characters long")]
+        [MinLength(2, ErrorMessage="Title should be between 2 - 20 characters")]
         public string ReviewTitle {get;set;}
 
         [Required(ErrorMessage="Enter your rating")]
