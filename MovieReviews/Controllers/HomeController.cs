@@ -94,8 +94,12 @@ namespace MovieReviews.Controllers
         public IActionResult Library()
         {
             List<Movie> AllMovies = dbContext.Movies
-            .Include(m => m.MovieReviews)
-            .ToList();
+                .Include(m => m.MovieReviews)
+                .ToList();
+            List<Review> AllReviews = dbContext.Reviews
+                .OrderByDescending(r => r.CreatedAt)
+                .Include(r => r.Creator)
+                .ToList();
             MovieList moviesInDb = new MovieList();
             moviesInDb.MovieLibrary = AllMovies;
             return View(moviesInDb);
@@ -121,8 +125,12 @@ namespace MovieReviews.Controllers
                     return RedirectToAction("Library");
                 } else{
                     List<Movie> AllMovies = dbContext.Movies
-                    .Include(m => m.MovieReviews)
-                    .ToList();
+                        .Include(m => m.MovieReviews)
+                        .ToList();
+                    List<Review> AllReviews = dbContext.Reviews
+                        .OrderByDescending(r => r.CreatedAt)
+                        .Include(r => r.Creator)
+                        .ToList();
                     MovieList moviesInDb = new MovieList();
                     moviesInDb.MovieLibrary = AllMovies;
                     ViewBag.hasError=true;
@@ -156,9 +164,12 @@ namespace MovieReviews.Controllers
                 return RedirectToAction("Library");
             } else
             {
+                List<Movie> AllMovies = dbContext.Movies
+                    .Include(m => m.MovieReviews)
+                    .ToList();
                 List<Review> AllReviews = dbContext.Reviews
-                .Include(r => r.UserId)
-                .ToList();
+                    .Include(r => r.UserId)
+                    .ToList();
                 MovieList reviewsInDb = new MovieList();
                 reviewsInDb.MovieReviews = AllReviews;
                 ViewBag.reviewError = true;
