@@ -31,7 +31,6 @@ namespace MovieReviews.Controllers
             return View("Index");
         }
 
-
         [HttpGet("moviequest/register")]
         public IActionResult RegPage()
         {
@@ -59,13 +58,11 @@ namespace MovieReviews.Controllers
             return View("Register");
         }
 
-
         [HttpGet("moviequest/login")]
         public IActionResult LogPage()
         {
             return View("Login");
         }
-
 
         [HttpPost("moviequest/login")]
         public IActionResult Login(Login user)
@@ -93,7 +90,6 @@ namespace MovieReviews.Controllers
             return View("Login");
         }
 
-
         [HttpGet("moviequest/library")]
         public IActionResult Library()
         {
@@ -105,13 +101,11 @@ namespace MovieReviews.Controllers
             return View(moviesInDb);
         }
 
-
         [HttpGet("moviequest/new/movie")]
         public IActionResult NewMoviePage()
         {
             return View("NewMovie");
         }
-
 
         [HttpPost("moviequest/new/movie")]
         public IActionResult NewMovie(MovieList newMovie)
@@ -137,22 +131,20 @@ namespace MovieReviews.Controllers
             }
         }
 
-
         [HttpGet("moviequest/movie/details/{MovieId}")]
         public IActionResult MovieDetails(int MovieId)
         {
             Movie movieInfo = dbContext.Movies
-            .Include(m => m.MovieReviews)
-            .FirstOrDefault(m => m.MovieId == MovieId);
+                .Include(m => m.MovieReviews)
+                .FirstOrDefault(m => m.MovieId == MovieId);
             MovieList a = new MovieList();
             List<Movie> AllMovies = dbContext.Movies
-            .Include(m => m.MovieReviews)
-            .ToList();
+                .Include(m => m.MovieReviews)
+                .ToList();
             a.MovieToAdd = movieInfo;
             a.MovieLibrary = AllMovies;
             return Json(movieInfo);
         }
-
 
         [HttpPost("moviequest/review/new")]
         public IActionResult NewReview(MovieList newReview)
@@ -174,17 +166,12 @@ namespace MovieReviews.Controllers
             }
         }
 
-
         [HttpGet("moviequest/logout")]
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
             return View("Index");
         }
-
-
-
-
 
 
 
