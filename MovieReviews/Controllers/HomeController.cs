@@ -102,6 +102,11 @@ namespace MovieReviews.Controllers
                 .ToList();
             MovieList moviesInDb = new MovieList();
             moviesInDb.MovieLibrary = AllMovies;
+
+            MovieList reviewsInDb = new MovieList();
+            reviewsInDb.MovieReviews = AllReviews;
+
+            ViewBag.DisplayReviews = AllReviews;
             return View(moviesInDb);
         }
 
